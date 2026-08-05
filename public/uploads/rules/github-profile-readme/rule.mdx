@@ -50,6 +50,8 @@ E.g. If your username is `johnsmith`, create a repo called `johnsmith` containin
   src="/uploads/rules/github-profile-readme/create-special-repo.jpg"
 />
 
+<youtubeEmbed url="https://www.youtube.com/watch?v=ZlAscAQnn8s" description={"Video: Profile README - GitHub Quick Tips - Gordon Beeming (1 min)"} />
+
 <boxEmbed
   style="warning"
   body={<>
@@ -79,7 +81,7 @@ Keep it short and scannable. This is a landing page, not a resume.
 * **What you're learning**: Shows curiosity and invites conversation
 * **How to reach you**: LinkedIn, blog, X, email
 * **Links to your best repos**: Point people at your strongest work
-* **(Optional) Stats and badges**: E.g. [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) for language and contribution cards
+* **(Optional) A stats widget**: See "Add the SSW stats widget" below
 
 ## What not to include
 
@@ -105,6 +107,18 @@ Keep it short and scannable. This is a landing page, not a resume.
   figure="Brady Stroud's profile README shows who he is, what he works on, his tech stack, and a link to his portfolio, all above the fold"
   src="/uploads/rules/github-profile-readme/good-profile-readme.jpg"
 />
+
+## Add the SSW stats widget
+
+Lots of profiles use third-party stats services. SSW hosts its own, so use that instead. It renders a contribution summary card and keeps the data on SSW infrastructure.
+
+Add this to your profile README, replacing `{{USERNAME}}` with your GitHub username:
+
+```markdown
+[![{{USERNAME}}'s GitHub stats](https://gitstats.ssw.com.au/api?username={{USERNAME}}&theme=dark)](https://github.com/SSWConsulting/SSW.GitHub.Profile.Stats)
+```
+
+The widget is maintained at [SSWConsulting/SSW.GitHub.Profile.Stats](https://github.com/SSWConsulting/SSW.GitHub.Profile.Stats).
 
 ## Sample profile README
 
